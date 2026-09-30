@@ -1,5 +1,7 @@
 #include <unordered_map>
 #include <string>
+#include "lexer.h"
+#include <unordered_map>
 
 
 enum class TokenType
@@ -85,7 +87,7 @@ const std::unordered_map<std::string, TokenType> token_map = {{"int", TokenType:
                                                            {"}", TokenType::right_brace},
                                                            {"(", TokenType::left_paren},
                                                            {")", TokenType::right_paren},
-                                                           {"[", TokenType::lef_sq},
+                                                           {"[", TokenType::left_sq},
                                                            {"]", TokenType::right_sq},
                                                            {",", TokenType::comma},
                                                            {";", TokenType::semicolon},
