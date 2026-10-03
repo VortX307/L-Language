@@ -17,9 +17,9 @@ class Lexer
 {
 private:
     const std::string& source;
-    size_t position;
-    int line;
-    int column;
+    size_t position {};
+    int line = 1;
+    int column = 1;
 
     char peek() const;
     char peek_next() const;
